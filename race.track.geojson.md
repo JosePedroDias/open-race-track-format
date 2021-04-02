@@ -72,7 +72,7 @@ Additional properties:
 - `rt:alignment-from-track` (optional): if defined this is the number of meters from the center of the track the decoration offsets. It's like it's glued to the track (this allows for better geometry parameterization for both 2D and 3D). A bit harder to accomplish, inspired by the similar RTB feature.
 
 
-## 7. Material patches
+## 7. Terrain materials
 
 These shall be `Polygon`s.
 
