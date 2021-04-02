@@ -5,6 +5,7 @@
             "type": "Feature",
             "properties": {
                 "rt:kind": "track",
+                "width": "18",
                 "stroke": "#444444"
             },
             "geometry": {
@@ -460,31 +461,9 @@
         {
             "type": "Feature",
             "properties": {
-                "rt:kind": "starting-grid",
-                "marker-color": "#0000FF"
-            },
-            "geometry": {
-                "type": "MultiPoint",
-                "coordinates": []
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "rt:kind": "pit-stop",
-                "marker-color": "#00FF00"
-            },
-            "geometry": {
-                "type": "MultiPoint",
-                "coordinates": []
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
                 "rt:kind": "checkpoint",
-                "stroke": "#FF0000",
-                "rt:zone": "1"
+                "rt:zone": "1",
+                "stroke": "#FF0000"
             },
             "geometry": {
                 "type": "LineString",
@@ -503,9 +482,9 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#FF0000",
                 "rt:kind": "checkpoint",
-                "rt:zone": "2"
+                "rt:zone": "2",
+                "stroke": "#FF0000"
             },
             "geometry": {
                 "type": "LineString",
@@ -525,8 +504,8 @@
             "type": "Feature",
             "properties": {
                 "rt:kind": "checkpoint",
-                "stroke": "#FF0000",
-                "rt:zone": "3"
+                "rt:zone": "3",
+                "stroke": "#FF0000"
             },
             "geometry": {
                 "type": "LineString",
@@ -546,8 +525,8 @@
             "type": "Feature",
             "properties": {
                 "rt:kind": "checkpoint",
-                "stroke": "#FF00FF",
-                "rt:drs": "detect"
+                "rt:drs": "detect",
+                "stroke": "#FF00FF"
             },
             "geometry": {
                 "type": "LineString",
@@ -566,9 +545,9 @@
         {
             "type": "Feature",
             "properties": {
-                "stroke": "#FF00FF",
+                "rt:kind": "checkpoint",
                 "rt:drs": "true",
-                "rt:kind": "checkpoint"
+                "stroke": "#FF00FF"
             },
             "geometry": {
                 "type": "LineString",
@@ -588,18 +567,19 @@
             "type": "Feature",
             "properties": {
                 "rt:kind": "checkpoint",
-                "rt:drs": "false"
+                "rt:drs": "false",
+                "stroke": "#FF00FF"
             },
             "geometry": {
                 "type": "LineString",
                 "coordinates": [
                     [
-                        -8.63204598561,
-                        37.23548248560
+                        -8.63209158316,
+                        37.23547394378
                     ],
                     [
-                        -8.63201916352,
-                        37.23548782423
+                        -8.63197088376,
+                        37.23549850150
                     ]
                 ]
             }

@@ -13,7 +13,7 @@ They carry the additional properties:
 - `rt:cross-sections*`: an array of indices, with the same size as the array of positions. One can replace them by `null` to signal the software should interpolate CSs between positions having `null`.
 - `rt:camber*` (optional): an array of camber values. a positive camber makes the right side of the cross section skew upwards, a negative one the left side.
 - `rt:height*` (optional): an array of heights from sea level, similar to cross sections. `null` values get interpolated too.
-- `rt:width` (optional, for 2D only): array of measurements, defines the width of the track section in meters. Works the same way as `rt:cross-sections`
+- `rt:width` (optional, for 2D only): single measurement or array of measurements, defining the width of the track sections in meters. Works the same way as `rt:cross-sections`
 
 We assume the direction of these line strings define the direction of the track.
 
@@ -24,6 +24,7 @@ These shall be 2-point `LineString`s, cutting the track perpendicularly.
 
 Additional properties:
 - `rt:kind`: `checkpoint`
+- `rt:zone` (optional): a zone number
 - `rt:drs` (optional): either `detect`, `true` or `false`
 
 
