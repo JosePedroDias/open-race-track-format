@@ -15,6 +15,14 @@ Here's the [spec](race.track.geojson.md) draft.
 
 This is open for discussion both in the form of issues and suggested changes to the spec via PRs. Would love to know if anyone else adopts this format.
 
+## Samples
+
+Visit [examples](examples/) and [f1gis' examples](https://github.com/JosePedroDias/f1gis/tree/main/assets/maps).
+
+## Implementations
+
+Visit [f1gis](https://github.com/JosePedroDias/f1gis) for an ongoing implementation.
+
 ## Inspiration
 
 Having been a racing game enthusiast I've played and analyzed several tools to author race tracks. Some of them are super easy (such as the one for [gene rally](https://gene-rally.com/)), other super powerful such as [race track builder](http://www.racetrackbuilder.com).
