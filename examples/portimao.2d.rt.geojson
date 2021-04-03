@@ -5,7 +5,8 @@
             "type": "Feature",
             "properties": {
                 "rt:kind": "track",
-                "width": "18",
+                "rt:width": "18",
+                "oneway": "yes",
                 "stroke": "#444444"
             },
             "geometry": {
@@ -426,6 +427,8 @@
             "type": "Feature",
             "properties": {
                 "rt:kind": "pit",
+                "rt:width": "14",
+                "oneway": "yes",
                 "stroke": "#888888"
             },
             "geometry": {
@@ -438,10 +441,6 @@
                     [
                         -8.62933429241,
                         37.22853447848
-                    ],
-                    [
-                        -8.62969287878,
-                        37.22951835549
                     ],
                     [
                         -8.63124114998,
