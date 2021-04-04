@@ -17,7 +17,7 @@ This is open for discussion both in the form of issues and suggested changes to 
 
 ## Samples
 
-Visit [examples](examples/) and [f1gis' examples](https://github.com/JosePedroDias/f1gis/tree/main/assets/maps).
+Visit [examples](examples/) and [f1gis' examples](https://github.com/JosePedroDias/f1gis/tree/main/assets/tracks).
 
 ## Implementations
 
