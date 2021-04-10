@@ -1,12 +1,136 @@
+
 {
     "type": "FeatureCollection",
+    "generator": "JOSM",
     "features": [
         {
             "type": "Feature",
             "properties": {
+                "rt:drs": "detect"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.62502767340,
+                    37.22740899210
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "rt:drs": "start"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.62887816958,
+                    37.22687927430
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "rt:sector": "1",
+                "rt:starting-grid": "start",
+                "raceway": "start-finish"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.63019697898,
+                    37.23040080986
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "rt:pit-stop": "finish"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.63094491887,
+                    37.23296443998
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "rt:sector": "2"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.62931397758,
+                    37.23284269939
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "rt:sector": "3"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.62503276753,
+                    37.22998183233
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "oneway": "yes",
+                "rt:kind": "pit",
+                "rt:width": "14",
+                "stroke": "#888888"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -8.62914050281,
+                        37.22750722295
+                    ],
+                    [
+                        -8.62933429241,
+                        37.22853447848
+                    ],
+                    [
+                        -8.62970133002,
+                        37.22961255573
+                    ],
+                    [
+                        -8.63094491887,
+                        37.23296443998
+                    ],
+                    [
+                        -8.63124114998,
+                        37.23380379982
+                    ],
+                    [
+                        -8.63165708542,
+                        37.23460268900
+                    ],
+                    [
+                        -8.63181600630,
+                        37.23486321710
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "oneway": "yes",
                 "rt:kind": "track",
                 "rt:width": "18",
-                "oneway": "yes",
                 "stroke": "#444444"
             },
             "geometry": {
@@ -17,8 +141,16 @@
                         37.23211300000
                     ],
                     [
+                        -8.63131378121,
+                        37.23348840444
+                    ],
+                    [
                         -8.63181500000,
                         37.23485900000
+                    ],
+                    [
+                        -8.63201636081,
+                        37.23543984562
                     ],
                     [
                         -8.63204100000,
@@ -103,6 +235,10 @@
                     [
                         -8.63006700000,
                         37.23491000000
+                    ],
+                    [
+                        -8.62931397758,
+                        37.23284269939
                     ],
                     [
                         -8.62850300000,
@@ -253,6 +389,10 @@
                         37.23009900000
                     ],
                     [
+                        -8.62503276753,
+                        37.22998183233
+                    ],
+                    [
                         -8.62628900000,
                         37.22967800000
                     ],
@@ -353,6 +493,10 @@
                         37.22756000000
                     ],
                     [
+                        -8.62502767340,
+                        37.22740899210
+                    ],
+                    [
                         -8.62597700000,
                         37.22651800000
                     ],
@@ -405,16 +549,16 @@
                         37.22666100000
                     ],
                     [
-                        -8.62890900000,
-                        37.22686700000
+                        -8.62887816958,
+                        37.22687927430
                     ],
                     [
                         -8.62929782390,
                         37.22793988344
                     ],
                     [
-                        -8.63077800000,
-                        37.23202400000
+                        -8.63019697898,
+                        37.23040080986
                     ],
                     [
                         -8.63081000000,
@@ -426,160 +570,39 @@
         {
             "type": "Feature",
             "properties": {
-                "rt:kind": "pit",
-                "rt:width": "14",
-                "oneway": "yes",
-                "stroke": "#888888"
+                "rt:drs": "finish"
             },
             "geometry": {
-                "type": "LineString",
+                "type": "Point",
                 "coordinates": [
-                    [
-                        -8.62914050281,
-                        37.22750722295
-                    ],
-                    [
-                        -8.62933429241,
-                        37.22853447848
-                    ],
-                    [
-                        -8.63124114998,
-                        37.23380379982
-                    ],
-                    [
-                        -8.63165708542,
-                        37.23460268900
-                    ],
-                    [
-                        -8.63181600630,
-                        37.23486321710
-                    ]
+                    -8.63201636081,
+                    37.23543984562
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "rt:kind": "checkpoint",
-                "rt:zone": "1",
-                "stroke": "#FF0000"
+                "rt:starting-grid": "finish"
             },
             "geometry": {
-                "type": "LineString",
+                "type": "Point",
                 "coordinates": [
-                    [
-                        -8.63009872198,
-                        37.23042664227
-                    ],
-                    [
-                        -8.63030256987,
-                        37.23038820149
-                    ]
+                    -8.63131378121,
+                    37.23348840444
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "rt:kind": "checkpoint",
-                "rt:zone": "2",
-                "stroke": "#FF0000"
+                "rt:pit-stop": "start"
             },
             "geometry": {
-                "type": "LineString",
+                "type": "Point",
                 "coordinates": [
-                    [
-                        -8.62924576879,
-                        37.23285690537
-                    ],
-                    [
-                        -8.62941743016,
-                        37.23282273689
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "rt:kind": "checkpoint",
-                "rt:zone": "3",
-                "stroke": "#FF0000"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [
-                        -8.62506153345,
-                        37.23007213213
-                    ],
-                    [
-                        -8.62499716043,
-                        37.22986711345
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "rt:kind": "checkpoint",
-                "rt:drs": "detect",
-                "stroke": "#FF00FF"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [
-                        -8.62512590647,
-                        37.22747518773
-                    ],
-                    [
-                        -8.62495424509,
-                        37.22735558945
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "rt:kind": "checkpoint",
-                "rt:drs": "true",
-                "stroke": "#FF00FF"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [
-                        -8.62883807302,
-                        37.22689427149
-                    ],
-                    [
-                        -8.62899900556,
-                        37.22685155751
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "rt:kind": "checkpoint",
-                "rt:drs": "false",
-                "stroke": "#FF00FF"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [
-                        -8.63209158316,
-                        37.23547394378
-                    ],
-                    [
-                        -8.63197088376,
-                        37.23549850150
-                    ]
+                    -8.62970133002,
+                    37.22961255573
                 ]
             }
         }

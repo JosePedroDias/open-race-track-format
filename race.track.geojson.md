@@ -10,44 +10,29 @@ These shall be described as `LineString`s.
 They carry the additional properties:
 
 - `rt:kind`: either `track` or `pit`
-- `rt:cross-sections*`: an array of indices, with the same size as the array of positions. One can replace them by `null` to signal the software should interpolate CSs between positions having `null`.
-- `rt:camber*` (optional): an array of camber values. a positive camber makes the right side of the cross section skew upwards, a negative one the left side.
-- `rt:height*` (optional): an array of heights from sea level, similar to cross sections. `null` values get interpolated too.
-- `rt:width` (optional, for 2D only): single measurement or array of measurements, defining the width of the track sections in meters. Works the same way as `rt:cross-sections`
+- `rt:width`: the default width of the track, in meters.
+- `rt:camber*` (optional): the default camber value. a positive camber makes the right side of the cross section skew upwards, a negative one the left side.
+- `rt:height*` (optional): the default height of the track, in meters.
+- `rt:cross-section*` (optional): the default cross section index to apply to the track. See cross sections.
 
 We assume the direction of these line strings define the direction of the track.
 
 
-## 2. Checkpoints
+## 2. Key points
 
-These shall be 2-point `LineString`s, cutting the track perpendicularly.
-
-Additional properties:
-- `rt:kind`: `checkpoint`
-- `rt:zone` (optional): a zone number
-- `rt:drs` (optional): either `detect`, `true` or `false`
-
-
-## 3. Starting grid
-
-These shall be a `Multipoint`.
-The car orientation can be derived from the track direction.
-The order they are defined is the pecking position, ie. from best qualification time down to last place. 
+These are `Point`s, of the track.
 
 Additional properties:
-- `rt:kind`: `starting-grid`
+- `raceway`: `start-finish` or both `start` and `finish`, to identify where the lap gets counted
+- `rt:starting-grid`: either `start` or `finish`
+- `rt:pit-stop`: either `start` or `finish`
+- `rt:drs` (optional): either `detect`, `start` or `finish`
+- `rt:sector` (optional): a section number
+- `rt:width` (optional): override the default width of the track at this point
+- `rt:camber*` (optional): override the default camber of the track at this point
+- `rt:height*` (optional): override the default height of the track at this point
 
-
-## 4. Pit stop
-
-These shall be a `Multipoint`.
-The car orientation can be derived from the track direction.
-
-Additional properties:
-- `rt:kind`: `pit-stop`
-
-
-## 5. Cross Sections*
+## 3. Cross Sections*
 
 These shall be a `MultiLineString`.
 
@@ -55,10 +40,10 @@ Additional properties:
 - `rt:kind`: `cross-sections`
 
 Each `LineString` is a profile in meters, with `0, 0` being the center of the track/pit/decoration.
-To use one of these, the element ought o reference the cross section index.
+To use one of these, the element ought to reference the cross section index.
 
 
-## 6. Track Decorations
+## 4. Track Decorations
 
 These shall be `LineString`s.
 
@@ -73,7 +58,7 @@ Additional properties:
 - `rt:alignment-from-track` (optional): if defined this is the number of meters from the center of the track the decoration offsets. It's like it's glued to the track (this allows for better geometry parameterization for both 2D and 3D). A bit harder to accomplish, inspired by the similar RTB feature.
 
 
-## 7. Terrain materials
+## 5. Terrain materials
 
 These shall be `Polygon`s.
 
@@ -85,7 +70,7 @@ Additional properties:
 - `rt:family`: `dirt`, `grass`, etc.
 
 
-## 8. Buildings
+## 6. Buildings
 
 These shall be `Polygon`s.
    
@@ -97,7 +82,7 @@ Additional properties:
 The reference height should be sea level too?
 
 
-## 9. Single Models
+## 7. Single Models
 
 These shall be `Point`s or `MultiPoint`s.
 
@@ -107,7 +92,7 @@ Additional attributes:
 - `rt:rotation` (optional): degrees to rotate the model around it's center, in the vertical axis
 
 
-## 10. Model batch
+## 8. Model batch
 
 These shall be `Polygon`s.
 
@@ -122,8 +107,6 @@ The idea of model batches is to allow a succinct way of describing a forest, set
 ## Other Properties
 
 Nothing prevents the author or the game from adding more details as properties, such as `color`s, `texture`s and other variants. The value of sharing a common structure is that most of the track description is shared, by using the elements and properties define above. We suggest custom additions to be done with prefixed properties `game-named-x:`, that way it becomes clear where the extensions are.
-
-
 
 
 ## Elements not mapped (yet?)
